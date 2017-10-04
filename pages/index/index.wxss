@@ -1,21 +1,28 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.zen {
+  margin: 10rpx 60rpx 10rpx 0;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.zen--furikana {
+  float: right;
+  color: #BFBFC3;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.zen--title {
+  float: right;
+  text-shadow: 1px 1px 1px #BFBFC3; 
+  font-size: 2rem;
 }
 
-.usermotto {
-  margin-top: 200px;
+.zen--meaning {
+  float: right;
+  margin: 0 100rpx;
+  border-left: 0.5rpx solid #BFBFC3;
+  border-right: 0.5rpx solid #BFBFC3;
+  padding: 0 15rpx;
+}
+
+.zen--from {
+  font-size: 0.8rem;
+  height: 80%;
+  float: right;
 }

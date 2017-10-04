@@ -7,4 +7,19 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+
+.tategaki {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 1rem;
+  text-align: center;
+  color: #BFBFC3;
+}

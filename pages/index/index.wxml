@@ -1,13 +1,21 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+<swiper style="height: {{windowHeight}}px; margin-top: 20rpx" 
+        current="{{1}}" indicator-dots="{{true}}">
+  <swiper-item>
+    <view class="zen" style="height: {{windowHeight}}px">
+      <view class="tategaki zen--furikana">むいちもつちゅうむじんぞう</view>
+      <view class="tategaki zen--title">無一物中無尽蔵</view>
+      <view class="tategaki zen--meaning">すべてはかかわりあい支え合っている</view>
+      <view class="tategaki zen--from">「無一物中無尽蔵　花有り月有り楼台有り」という蘇東坡の詩の一節から</view>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view class="zen" style="height: {{windowHeight}}px">
+      <view class="tategaki zen--furikana">こうじもなきにしかず</view>
+      <view class="tategaki zen--title">好事不如無</view>
+      <view class="tategaki zen--meaning">煩悩を生む「よいこと」ならないほうがいい</view>
+      <view class="tategaki zen--from">「好事」とはよいこと、喜ばしいこと。よい出来事でもそれに執着する心が起きると煩悩や妄想の元になると戒めることば（『碧巌録』『五燈会元』）。</view>
+    </view>
+  </swiper-item>
+</swiper>
