@@ -1,0 +1,9 @@
+<view class="about__container">
+  <view class="about__title">
+    <view class="about__title--first">禅</view>
+    <view>の言葉</view>
+  </view>
+  <view class="about__title--sub">ふっと心が軽くなる</view>
+  <image class="about__logo" src="/images/lotus-big.png"></image>
+  <view class="footer">www.everjapan.com</view>
+</view>

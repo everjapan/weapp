@@ -1,21 +1,27 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/settings/index"
+    "pages/about/index"
   ],
   "window": {
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "印象日本",
+    "navigationBarTitleText": "印象日本・禅",
     "navigationBarTextStyle":"black"
   },
-  "tabBar": {
+  "tabBar": { 
+    "color": "#BFBFC3",
+    "selectedColor": "#000",
     "list": [{
+      "text": "禅语",
       "pagePath": "pages/index/index",
-      "text": "禅语"
+      "iconPath": "icons/lotus.png",
+      "selectedIconPath": "icons/lotus-selected.png"
     }, {
-      "pagePath": "pages/settings/index",
-      "text": "设置"
+      "text": "关于",
+      "pagePath": "pages/about/index",
+      "iconPath": "icons/about.png",
+      "selectedIconPath": "icons/about-selected.png"
     }]
   }
 }

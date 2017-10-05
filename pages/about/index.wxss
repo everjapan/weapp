@@ -1,0 +1,36 @@
+/* pages/about/index.wxss */
+.about__container {
+  margin-top: 100rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__title {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+.about__title--first {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  line-height: 60px;
+  text-align: center;
+  background: #959595
+}
+
+.about__title--sub {
+  margin: 10rpx;
+  color: #959595;
+  font-size: 15px;
+}
+
+.about__logo {
+  margin-top: 250rpx;
+  width: 356rpx;
+  height: 214rpx;
+}
