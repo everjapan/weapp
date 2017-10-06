@@ -1,6 +1,7 @@
 <!--index.wxml-->
 <swiper style="height: {{windowHeight}}px; margin-top: 20rpx" 
-        current="{{wordList.lenght - 1}}" indicator-dots="{{true}}">
+        current="{{swiperCurrent}}" indicator-dots="{{true}}"
+        bindchange="currentChange">
   <block wx:for="{{wordList}}">
     <swiper-item>
       <view class="zen" style="height: {{windowHeight}}px">
