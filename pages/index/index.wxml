@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <swiper style="height: {{windowHeight}}px; margin-top: 20rpx" 
-        current="{{swiperCurrent}}" indicator-dots="{{true}}"
+        current="{{swiperCurrent}}" indicator-dots="{{!shouldShowCategory}}"
         bindchange="currentChange">
   <block wx:for="{{wordList}}">
     <swiper-item>
@@ -13,3 +13,17 @@
     </swiper-item>
   </block>
 </swiper>
+
+<image hidden="{{shouldShowCategory}}" class="zen-category__menu" src="/icons/float-menu.png"
+       bindtap="onShowCategory"></image>
+
+<view hidden='{{!shouldShowCategory}}' class="zen-category__mask">
+  <view class="zen-category__container">
+    <view class="tategaki zen-category__item">第１章　ふっと背中が軽くなる</view>
+    <view class="tategaki zen-category__item">第２章　たち止まって足下を見る</view>
+    <view class="tategaki zen-category__item">第３章　優しく生きる・強く生きる</view>
+    <view class="tategaki zen-category__item">第４章　こころざしをなくさないで</view>
+  </view>
+  <image class="zen-category__menu" src="/icons/float-close.png"
+         bindtap="onDismissCategory"></image>
+</view>

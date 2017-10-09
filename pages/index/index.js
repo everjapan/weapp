@@ -1,11 +1,12 @@
-var words = require('../../assets/zen-list');
+const words = require('../../assets/zen-list');
 
 Page({
   data: {
     windowHeight: 600,
     wordList: [],
     swiperCurrent: 0,
-    wordCurrent: 0
+    wordCurrent: 0,
+    shouldShowCategory: false
   },
 
   onLoad(query) {
@@ -34,5 +35,13 @@ Page({
     this.setData({
       wordCurrent: event.detail.current
     });
+  },
+
+  onShowCategory() {
+    this.setData({ shouldShowCategory: true });
+  },
+
+  onDismissCategory() {
+    this.setData({ shouldShowCategory: false });
   }
 })
